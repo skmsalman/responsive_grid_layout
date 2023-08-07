@@ -1,0 +1,27 @@
+/* for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    grid-template-areas:
+      "h h h"
+      "n n n"
+      "s m m"
+      "a f f" !important;
+  }
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* for small device */
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template-areas:
+      "h"
+      "n"
+      "m"
+      "s"
+      "a"
+      "f" !important;
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  font-family: sans-serif;
+}
+li {
+  list-style-type: none;
+  font-size: 1.5em;
+}
+.box {
+  background: #f7ce2b;
+  border: 2px solid #d19106;
+  border-radius: 10px;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "h h h h"
+    "n m m s"
+    "n m m a"
+    "f f f f";
+}
+.header {
+  grid-area: h;
+}
+.nav {
+  grid-area: n;
+}
+.main {
+  grid-area: m;
+}
+.sidebar {
+  grid-area: s;
+}
+.advertising {
+  grid-area: a;
+}
+.footer {
+  grid-area: f;
+}
